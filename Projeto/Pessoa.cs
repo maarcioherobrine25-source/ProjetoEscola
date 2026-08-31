@@ -1,6 +1,6 @@
 ﻿namespace Projeto
 {
-    public static class Pessoa
+    public  class Pessoa
     {
         private string nome;
 
