@@ -1,12 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Projeto
+﻿namespace Projeto
 {
-    internal class Aluno
+    class Aluno : Pessoa
     {
+        public string CursoTecnico {get; set;}
+
+        public Aluno(string nome,string cursoTecnico): base(nome)
+        {
+            cursoTecnico = cursoTecnico;
+        }
+        public override void ExibirInfo()
+        {
+            Console.WriteLine($"[Aluno] : {Nome}, Curso: {CursoTecnico}");
+        }
+
     }
 }
